@@ -7,7 +7,8 @@ const SendMSG = (msg, request, answer, imgfile)=>{
      if(imgfile) formData.append("imgfile",imgfile);
  
     var x = new XMLHttpRequest();
-    x.open("POST", "http://serhiy.my-board.org/001/index.php", true);
+    //x.open("POST", "http://serhiy.my-board.org/001/index.php", true);
+    x.open("POST", "https://ma-online.org/001/index.php", true);
     x.send(formData);
     x.onload = ()=>{
          //let nove = Math.floor(Date.now() / 1000) - Zaraz;
