@@ -31,11 +31,19 @@ const SendMSG = (msg, request, answer, imgfile)=>{
      }        
 
 //let JSstr = JSON.stringify([G_Param1, G_Param2, G_Param3, par.last_time]);
-let G_Param1, G_Param2, G_Param3, G_Param4;
+let G_Param1='';
+let G_Param2='';
+let G_Param3='';
+let G_Param4 = 0;
+
+var date = new Date();
+var result = date.getTime();
+
 G_Param1='login';
 G_Param2='password';
 G_Param3='sid';
-G_Param4=new Date().getTime();
+
+G_Param4=result;
 
 
 let JSstr = JSON.stringify([G_Param1, G_Param2, G_Param3, G_Param4]);
