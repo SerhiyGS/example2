@@ -31,7 +31,7 @@ const SendMSG = (msg, request, answer, imgfile)=>{
      }        
 
 //let JSstr = JSON.stringify([G_Param1, G_Param2, G_Param3, par.last_time]);
-let G_Param1, G_Param2, G_Param3, last_time;
+let G_Param1, G_Param2, G_Param3, G_Param4;
 G_Param1='login';
 G_Param2='password';
 G_Param3='sid';
