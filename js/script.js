@@ -36,14 +36,13 @@ let G_Param2='';
 let G_Param3='';
 let G_Param4 = 0;
 
-var date = new Date();
-var result = date.getTime();
+//var date = new Date();var result = date.getTime();
 
 G_Param1='login';
 G_Param2='password';
 G_Param3='sid';
 
-G_Param4=result;
+//G_Param4=result;
 
 
 let JSstr = JSON.stringify([G_Param1, G_Param2, G_Param3, G_Param4]);
