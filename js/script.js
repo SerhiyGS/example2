@@ -14,18 +14,13 @@ const SendMSG = (msg, request, answer, imgfile)=>{
          let ar;
        let radochok = '';
          switch (msg) {
-          case 'ur0'://Оновлення поточного часу у записі клієнта і обнулення фантомів
- /*
+          case 'r0':
+ 
              ar = JSON.parse(x.responseText);
-             //console.log(x.responseText);
-             //console.log(ar[0].answer);
-             if(ar[0].answer == 'exit') {
-                //console.log(ar[0].answer);
-                window.location.href='./index.php';
-             }
- */
-             break;
 
+             answer.innerHTML = ar[0].answer;
+ 
+             break;
 
 
              default:
@@ -44,5 +39,5 @@ G_Param4=new Date().getTime();
 
 
 let JSstr = JSON.stringify([G_Param1, G_Param2, G_Param3, G_Param4]);
-SendMSG('ur0', JSstr, '', '' );
+SendMSG('r0', JSstr, '', '' );
   
